@@ -1,0 +1,72 @@
+.home-container {
+  margin-top: 40px;
+}
+
+.video-title {
+  margin: 0;
+  width: 244px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.video-body {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-body > .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-btn-dropdown {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-btn-dropdown > svg {
+  color: black;
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+}
+
+.video-btn-dropdown:hover {
+  background: #e6e6e6;
+}
+
+.video-btn-dropdown:first-child:active {
+  background: #e6e6e6;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.video-card {
+  position: relative;
+  transition: all 0.35s cubic-bezier(0, 0.15, 0, 1);
+}
+
+.video-card:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  z-index: 999;
+}
+
+.dropdown-menu.show {
+  z-index: 99999;
+}
